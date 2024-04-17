@@ -15,22 +15,22 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div className="">
+      {/* <Link  to="/about" >About</Link> */}
       <div className="baskervville-regular">
         <BrowserRouter>
-          {/* <Link  to="/about" >About</Link> */}
-          <Hero />
+
           <Routes>
+            <Route path='/' element={<Hero />} />
             <Route path='/about' element={<About />} />
           </Routes>
+          {/* <Gallery />
+          <Services />
+          <Catering /> */}
+          <Testonimial />
+          <Contact />
         </BrowserRouter>
 
-       
-        <About />
-        <Gallery />
-        <Services />
-        <Catering />
-        <Testonimial />
-        <Contact />
+
 
       </div>
     </div>

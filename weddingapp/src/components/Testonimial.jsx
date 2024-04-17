@@ -53,31 +53,31 @@ const Testonimial = () => {
         // cssEase: "linear",
     };
     return (
-        <div className='bg-[#585B56] px-28'>
-            <div className="px-[50px]  w-full  ">
-                <Slider ref={slider} {...settings} className='px-14' >
+        <div className='bg-[#585B56] px-[10px] w-full'>
+            <div className=" px-[5px] xl:px-[50px]  w-full   ">
+                <Slider ref={slider} {...settings} className='xl:px-14' >
                     {
                         data.map((d) => {
                             return (
-                                <div className=" w-full h-[500px] flex flex-col py-2  items-center justify-center space-y-[20px]  ">
+                                <div className=" w-full flex flex-col py-2  items-center justify-center space-y-[20px]  ">
                                     <div className="flex flex-col items-center justify-center ">
-                                        <h1 className='literata text-[32px] font-extrabold tracking-tighter text-white'>Testimonials</h1>
-                                        <h1 className='text-[#B8C1B2] text-[16px]'>from happy, delighted couples</h1>
+                                        <h1 className='literata text-[15px] xs:text-[20px] sm:text-[25px] xl:text-[28px] 2xl:text-[30px] 2xl:tracking-normal font-extrabold tracking-tighter text-white   '>Testimonials</h1>
+                                        <h1 className='text-[#B8C1B2] text-[10px] xs:text-[13px] sm:text-[17px] xl:text-[16px]'>from happy, delighted couples</h1>
                                     </div>
-                                    <div className="flex flex-row items-start  text-center gap-8">
-                                        <div className="h-[250px]  flex flex-col justify-center items-center pr-10"
+                                    <div className="flex flex-row items-start justify-center  text-center lg:gap-[40px] xl:gap-8">
+                                        <div className=" mt-[80px]   flex flex-col justify-center items-center pr-2 xl:pr-10"
                                             onClick={() => slider?.current?.slickPrev()}>
-                                            <Btntestinomial ><IoIosArrowRoundBack size={50} /></Btntestinomial>
+                                            <Btntestinomial ><IoIosArrowRoundBack size={25} className=''  /></Btntestinomial>
                                         </div>
 
-                                        <RiDoubleQuotesL className='text-[#464D43]' size={100} />
-                                        <div className="text-[16px] text-white roboto tracking-wide flex flex-col gap-[45px] ">
-                                            <h1>Lorem ipsum sit ac suspendisse adipiscing eget aliquam fermentum rutrum tempus aenean. Suspendisse nascetur vulputate viverra varius eu ullamcorper. Cursus pellentesque erat eget eget ullamcorper id in. Nullam scelerisque varius viverra augue quis. Laoreet eget curabitur vitae sed at facilisis purus convallis imperdiet.</h1>
+                                        <RiDoubleQuotesL className='text-[#464D43] pb-[70px]' size={100} />
+                                        <div className=" text-[10px] xs:text-[14px] sm:text-[16px] xl:text-[20px] 2xl:text-[22px] text-white roboto tracking-wide flex flex-col gap-[45px] ">
+                                            <h1 >Lorem ipsum sit ac suspendisse adipiscing eget aliquam fermentum rutrum tempus aenean. Suspendisse nascetur vulputate viverra varius eu ullamcorper. Cursus pellentesque erat eget eget ullamcorper id in. Nullam scelerisque varius viverra augue quis. Laoreet eget curabitur vitae sed at facilisis purus convallis imperdiet.</h1>
                                             <h1>Penatibus auctor diam vivamus amet a vehicula ultrices. Volutpat arcu in amet praesent nisl mattis etiam cras orci. Ut urna elementum sapien orci lacus!</h1>
                                         </div>
-                                        <RiDoubleQuotesR className='text-[#464D43]' size={100} />
-                                        <div className="h-[250px]  flex flex-col justify-center items-center pr-10" onClick={() => slider?.current?.slickNext()} >
-                                            <Btntestinomial ><IoIosArrowRoundForward size={50} /></Btntestinomial>
+                                        <RiDoubleQuotesR className='text-[#464D43] pb-[70px]' size={100} />
+                                        <div className=" mt-[80px]   flex flex-col justify-center items-center pr-2 xl:pr-10" onClick={() => slider?.current?.slickNext()} >
+                                            <Btntestinomial ><IoIosArrowRoundForward size={25} className='' /></Btntestinomial>
                                         </div>
                                     </div>
 

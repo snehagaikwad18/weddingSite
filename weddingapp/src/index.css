@@ -27,6 +27,12 @@ code {
   font-style: normal;
 }
 
+.baskervville {
+  font-family: "Baskervville", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .baskervville-regular-italic {
   font-family: "Baskervville", serif;
   font-weight: 400;
