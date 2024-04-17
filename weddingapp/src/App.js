@@ -11,6 +11,7 @@ import Testonimial from './components/Testonimial';
 import Contact from './components/Contact';
 import Gallery from './components/Gallery';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import Aboutroute from './components/Aboutroute';
 
 function App() {
   return (
@@ -21,13 +22,16 @@ function App() {
 
           <Routes>
             <Route path='/' element={<Hero />} />
-            <Route path='/about' element={<About />} />
+            <Route path='/about' element={<Aboutroute/>} />
+            {/* <Route path='/about' element={<Testonimial />} /> */}
+            
+          
+            
+
           </Routes>
           {/* <Gallery />
           <Services />
           <Catering /> */}
-          <Testonimial />
-          <Contact />
         </BrowserRouter>
 
 

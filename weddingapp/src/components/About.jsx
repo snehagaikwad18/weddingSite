@@ -1,6 +1,9 @@
 import React from 'react'
 import aboutImg from '../assets/about.png'
 
+
+
+
 const About = () => {
   return (
     <>
@@ -29,6 +32,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      
     </>
   )
 }

@@ -53,7 +53,7 @@ const Testonimial = () => {
         // cssEase: "linear",
     };
     return (
-        <div className='bg-[#585B56] px-[10px] w-full'>
+        <div className='bg-[#585B56] px-[10px] w-full lg:py-12'>
             <div className=" px-[5px] xl:px-[50px]  w-full   ">
                 <Slider ref={slider} {...settings} className='xl:px-14' >
                     {
