@@ -79,3 +79,6 @@ code {
   /* background-attachment: fixed; */
   background-position: center;
 }
+.slick-slide > div{
+  margin: 0 15px;
+}

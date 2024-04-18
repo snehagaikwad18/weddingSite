@@ -57,9 +57,9 @@ const Testonimial = () => {
             <div className=" px-[5px] xl:px-[50px]  w-full   ">
                 <Slider ref={slider} {...settings} className='xl:px-14' >
                     {
-                        data.map((d) => {
+                        data.map((d , i) => {
                             return (
-                                <div className=" w-full flex flex-col py-2  items-center justify-center space-y-[20px]  ">
+                                <div key={i} className=" w-full flex flex-col py-2  items-center justify-center space-y-[20px] ">
                                     <div className="flex flex-col items-center justify-center ">
                                         <h1 className='literata text-[15px] xs:text-[20px] sm:text-[25px] xl:text-[28px] 2xl:text-[30px] 2xl:tracking-normal font-extrabold tracking-tighter text-white   '>Testimonials</h1>
                                         <h1 className='text-[#B8C1B2] text-[10px] xs:text-[13px] sm:text-[17px] xl:text-[16px]'>from happy, delighted couples</h1>

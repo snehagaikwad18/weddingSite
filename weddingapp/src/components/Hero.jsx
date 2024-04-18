@@ -6,6 +6,9 @@ import Nav from './Nav';
 import About from './About';
 import Testonimial from './Testonimial';
 import Contact from './Contact';
+import Catering from './Catering';
+import Gallery from './Gallery';
+import Services from './Services';
 
 
 const Hero = () => {
@@ -20,7 +23,7 @@ const Hero = () => {
   return (
     <>
 
-      <div className='bg-img w-full h-screen gap-[100px] xs:gap-[130px] sm:gap-[160px] md:gap-[100px] 2xl:gap-[150px] flex flex-col items-center '>
+      <div className='bg-img  w-full h-screen gap-[100px] xs:gap-[130px] sm:gap-[160px] md:gap-[100px] 2xl:gap-[150px] flex flex-col items-center '>
         <Nav />
         <div className="flex flex-col items-center justify-center gap-5 xl:gap-5 md:gap-5 2xl:gap-6">
           <h1 className='text-[#576250] text-[30px] leading-[35px] font-bold xl:text-[59px] 2xl:text-[65px] md:text-[50px]  text-center md:leading-[60px] 2xl:leading-[70px] lg:text-[55px] '> Discover your perfect Indian <br /> wedding venue</h1>
@@ -45,10 +48,16 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      <About />
-      <Testonimial />
-      <Contact/>
+      <div className="flex flex-col gap-[30px]">
+        <div className="flex flex-col gap-[50px]">
+          <About />
+          <Gallery/>
+          <Services/>
+          <Catering />
+        </div>
+        <Testonimial />
+        <Contact />
+      </div>
 
 
     </>

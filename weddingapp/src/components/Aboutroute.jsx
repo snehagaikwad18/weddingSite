@@ -6,11 +6,14 @@ import AboutServices from './AboutServices'
 const Aboutroute = () => {
     return (
         <>
-            
-                <About />
-                <AboutServices/>
+            <div className="flex flex-col gap-10 ">
+                <div className="py-12">
+                    <About />
+                </div>
+                <AboutServices />
                 <Contact />
-            
+            </div>
+
 
 
         </>

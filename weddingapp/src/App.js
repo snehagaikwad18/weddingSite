@@ -12,25 +12,25 @@ import Contact from './components/Contact';
 import Gallery from './components/Gallery';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Aboutroute from './components/Aboutroute';
+import AboutServices from './components/AboutServices';
+import TestinomialRoute from './components/TestinomialRoute';
+import CateringRoute from './components/CateringRoute';
 
 function App() {
   return (
     <div className="">
-      {/* <Link  to="/about" >About</Link> */}
       <div className="baskervville-regular">
         <BrowserRouter>
-
           <Routes>
             <Route path='/' element={<Hero />} />
-            <Route path='/about' element={<Aboutroute/>} />
-            {/* <Route path='/about' element={<Testonimial />} /> */}
-            
-          
-            
-
+            <Route path='/about' element={<Aboutroute />} />
+            <Route path='/services' element={<AboutServices />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/Testimonials' element={<TestinomialRoute />} />
+            <Route path='/Catering' element={<CateringRoute />} />         
           </Routes>
           {/* <Gallery />
-          <Services />
+          
           <Catering /> */}
         </BrowserRouter>
 

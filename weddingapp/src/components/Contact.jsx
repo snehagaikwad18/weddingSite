@@ -57,7 +57,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className='flex flex-col sm:gap-8 md:flex-row md:justify-between md:px-8 md:items-center md:pb-[25px] '>
+    <div className='flex flex-col sm:gap-8 md:flex-row md:justify-between  md:items-center md:pb-[25px] md:px-10 lg:px-[100px] 2xl:px-[200px]'>
       <div className="px-[12px] py-[40px] ">
         <div className="flex flex-col gap-5  xs:gap-[30px] sm:gap-[42px] md:gap-[25px]  ">
           <div className="leading-[20px]  flex flex-col items-center justify-center md:items-start ">
@@ -113,7 +113,7 @@ const Contact = () => {
               </div>
 
               <button type="submit"
-                className=" px-[25px] py-[5px] rounded-[8px] xs:w-[300px] xs:py-[10px] sm:w-[350px]  lg:font-bold  lg:tracking-wider xl:w-[500px]  2xl:w-[160px]  md:w-[125px] lg:w-[156px] xl:h-[50px] 2xl:h-[50px] lg:h-[49px] md:h-[42px] bg-[#576250] md:text-[14px] lg:text-[15px] xl:text-[18px] 2xl:text-[18px]  text-white scope-one-regular tracking-wide text-center flex  items-center justify-center"
+                className=" px-[25px] py-[5px] rounded-[8px] xs:w-[300px] xs:py-[10px] sm:w-[350px]  lg:font-bold  lg:tracking-wider xl:w-[250px]  2xl:w-[160px]  md:w-[125px] lg:w-[156px] xl:h-[50px] 2xl:h-[50px] lg:h-[49px] md:h-[42px] bg-[#576250] md:text-[14px] lg:text-[15px] xl:text-[18px] 2xl:text-[18px]  text-white scope-one-regular tracking-wide text-center flex  items-center justify-center"
               
               >Send</button>
             </form>
@@ -126,7 +126,7 @@ const Contact = () => {
 
 
 {/* map section */}
-      <div className="gap-5 flex flex-col">
+      <div className="gap-5 flex flex-col  ">
         <div className="px-2 flex flex-col gap-3 items-center  justify-center  md:items-start ">
           <div className="flex flex-col gap-2 xs:gap-5 items-center  justify-center md:items-start md:justify-center ">
             <div className="items-center  justify-center flex flex-col md:items-start">
@@ -157,9 +157,9 @@ const Contact = () => {
         <div className="bg-opacity-80 md:order-first pt-7">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2706402.7532223384!2d7.874835480678192!3d44.491863075323316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c26f293e3163%3A0xff5d82c1f7db9ca8!2sVia%20Roma%2C%20123%2C%2020090%20Cesano%20Boscone%20MI%2C%20Italy!5e0!3m2!1sen!2sin!4v1713330328987!5m2!1sen!2sin"
             width="600" height="450" style={{ border: "0" }}
-            allowfullscreen=""
+            // allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            // referrerpolicy="no-referrer-when-downgrade"
             className="w-full md:w-[340px] md:h-[350px] md:pr-[10px] md:rounded-md lg:w-[500px] lg:h-[400px] mlg:rounded-md  opacity-4"
           >
           </iframe>

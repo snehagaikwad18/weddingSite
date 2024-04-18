@@ -1,37 +1,35 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, X } from "lucide-react";
-import Button from './Button';
+import Modal from './Modal';
 
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggleModal = () => {
+    setIsOpen(!isOpen);
+  };
 
-
-const Nav = () => {
-
-    return (
-        <>
-            <div className=" p-7 w-full">
-                <div className="">
-
-                    <div className="flex justify-start items-center">
-                        <img src="" alt="" />
-                    </div>
-
-                    <div className="flex justify-end items-center">
-                        <ul className='flex flex-row items-center justify-center gap-5'>
-                            <li><NavLink className="text-white text-[18px] md:text-[15px]  lg:text-[17px]  xl:text-[20px]  2xl:text-[20px] " to="/">Home</NavLink>  </li>
-                            <li><NavLink className="text-white text-[18px] md:text-[15px]  lg:text-[17px]  xl:text-[20px]  2xl:text-[20px] " to="/about">about</NavLink>  </li>
-                            <li><NavLink className="text-white text-[18px] md:text-[15px]  lg:text-[17px]  xl:text-[20px]  2xl:text-[20px] " to="/Services">Services</NavLink>  </li>
-                            <li><NavLink className="text-white text-[18px] md:text-[15px]  lg:text-[17px]  xl:text-[20px]  2xl:text-[20px] " to="/Catering">Catering</NavLink>  </li>
-                            <li><NavLink className="text-white text-[18px] md:text-[15px]  lg:text-[17px]  xl:text-[20px]  2xl:text-[20px] " to="/Testimonials">Testimonials</NavLink>  </li>
-                            <li><NavLink className="text-white text-[18px] md:text-[15px]  lg:text-[17px]  xl:text-[20px]  2xl:text-[20px] " to="/Contact Us">Contact Us</NavLink>  </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </>
-    )
+  return (
+    <div className="p-7 w-full">
+      <div className="">
+        <div className="flex justify-between items-center">
+          <div className="flex justify-start items-center">
+            <img src="" alt="" />
+          </div>
+          <button onClick={toggleModal} className="block md:hidden">
+            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {isOpen ? (
+                <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              ) : (
+                <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              )}
+            </svg>
+          </button>
+        </div>
+      </div>
+      <Modal isOpen={isOpen} toggleModal={toggleModal} />
+    </div>
+  );
 }
 
-export default Nav
+export default Navbar;
