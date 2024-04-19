@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
 
-      <div className='  pt-[40px] pb-[20px]  py-[100px] w-full h-[700px] xs:h-[750px] md:h-[600px] md:gap-[100px] xl:gap-[50px] gap-[50px] flex flex-col' id='about'>
+      <div className='  pt-[40px] pb-[20px]  py-[100px] w-full h-[700px] xs:h-[750px] md:h-[600px] md:gap-[100px] xl:gap-[50px] gap-[10px] flex flex-col' id='about'>
         <div className=" px-10 flex flex-col items-center justify-center ">
           <h1 className='text-[#576250] text-[20px]  leading-[35px] xs:text-[25px] sm:text-[30px] sm:leading-[50px] font-extrabold md:text-[30px] lg:text-[35px] xl:text-[35px]  text-center  cinzel tracking-tighter '> ABOUT US</h1>
           <h1 className='text-[10px] leading-[10px] xs:text-[13px] xs:leading-[15px] xs:w-[400px] sm:text-[15px] sm:w-[500px] text-center font-medium scope-one-regular  md:text-[15px] md:leading-[20px]  lg:text-[17px] lg:leading-[20px] ' >Capturing Love's Essence: Our Journey to Crafting Unforgettable Celebrations</h1>

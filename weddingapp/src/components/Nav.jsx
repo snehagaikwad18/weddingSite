@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Modal from './Modal';
+import logo1 from '../assets/logo1.png';
+import logo3 from '../assets/logo3.png';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +12,11 @@ function Navbar() {
   };
 
   return (
-    <div className="p-7 w-full">
+    <div className="p-7 w-full md:py-2 md:flex md:flex-row md:justify-between md:items-center ">
       <div className="">
         <div className="flex justify-between items-center">
-          <div className="flex justify-start items-center">
-            <img src="" alt="" />
+          <div className="flex justify-start items-center w-[50px] md:w-[80px] ">
+            <img src={logo3} alt="" className="object-cover w-full h-full" />
           </div>
           <button onClick={toggleModal} className="block md:hidden">
             <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +29,17 @@ function Navbar() {
           </button>
         </div>
       </div>
-      <Modal isOpen={isOpen} toggleModal={toggleModal} />
+      {/* Conditionally render the modal based on isOpen */}
+      {isOpen && <Modal isOpen={isOpen} toggleModal={toggleModal} />}
+      {/* Conditionally render the navigation items based on screen size */}
+      <ul className="hidden md:flex md:flex-row md:items-center md:gap-5 text-white scope-one-regular">
+        <li> <NavLink to="/"> Home </NavLink> </li>
+        <li> <NavLink to="/about"> About </NavLink> </li>
+        <li> <NavLink to="/services"> Services </NavLink> </li>
+        <li> <NavLink to="/catering"> Catering </NavLink> </li>
+        <li> <NavLink to="/Testimonials"> Testimonials </NavLink> </li>
+        <li> <NavLink to="/Contact"> Contact Us </NavLink> </li>
+      </ul>
     </div>
   );
 }
