@@ -1,15 +1,17 @@
 import React from 'react'
 import Testonimial from './Testonimial'
 import Contact from './Contact'
+import Nav from './Nav';
 
 const TestinomialRoute = () => {
   return (
     <>
-      <div className="flex flex-col gap-[150px]">
-        <div className="py-[110px] bg-[#585B56]">
+    <Nav />
+      <div className="flex flex-col gap-[px]">
+        <div className=" bg-[#585B56] py-[81.5px] lg:py-[61px]">
           <Testonimial />
         </div>
-        <Contact />
+       
       </div>
     </>
   )

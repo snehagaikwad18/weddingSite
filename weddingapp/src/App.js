@@ -15,6 +15,8 @@ import Aboutroute from './components/Aboutroute';
 import AboutServices from './components/AboutServices';
 import TestinomialRoute from './components/TestinomialRoute';
 import CateringRoute from './components/CateringRoute';
+import GalleryRoute from './components/GalleryRoute';
+import ContactRoute from './components/ContactRoute';
 
 function App() {
   return (
@@ -25,9 +27,10 @@ function App() {
             <Route path='/' element={<Hero />} />
             <Route path='/about' element={<Aboutroute />} />
             <Route path='/services' element={<AboutServices />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path='/contact' element={<ContactRoute />} />
             <Route path='/Testimonials' element={<TestinomialRoute />} />
             <Route path='/Catering' element={<CateringRoute />} />         
+            <Route path='/Gallery' element={<GalleryRoute />} />         
           </Routes>
           {/* <Gallery />
           

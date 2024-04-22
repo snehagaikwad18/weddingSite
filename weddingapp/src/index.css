@@ -15,6 +15,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -40,7 +41,7 @@ code {
 }
 
 
-.literata{
+.literata {
   font-family: "Literata", serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -53,14 +54,21 @@ code {
   font-weight: 600;
   font-style: normal;
 }
+
 .roboto {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
+
 .scope-one-regular {
   font-family: "Scope One", serif;
   font-weight: 400;
+  font-style: normal;
+}
+.scope-one-medium {
+  font-family: "Scope One", serif;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -72,13 +80,56 @@ code {
   font-style: normal;
 }
 
-.bg-img{
+.bg-img {
   background-image: url('/src/assets/hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: center;
 }
-.slick-slide > div{
+
+.slick-slide>div {
   margin: 0 15px;
+}
+
+
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-gallery-left {
+  animation: scrollLeft 10s linear infinite;
+}
+
+.animate-gallery-right {
+  animation: scrollRight 10s linear infinite;
+}
+
+.delay-1 {
+  animation-delay: 0s;
+}
+
+.delay-2 {
+  animation-delay: 5s; /* Adjust the delay as needed */
+}
+
+.delay-3 {
+  animation-delay: 10s; /* Adjust the delay as needed */
 }

@@ -81,7 +81,7 @@ const Catering = () => {
   };
 
   return (
-    <div className=' py-10 flex flex-col gap-7 2xl:gap-[60px] '>
+    <div className=' py-10 flex flex-col gap-7  2xl:gap-[60px] '>
       <div className="px-10">
         <h1 className='cinzel text-[20px] text-[#576250] text-center xs:text-[25px] sm:text-[30px] ' >Catering Service</h1>
         <h1 className=' scope-one-regular text-center text-[15px]' >Indulge in a delightful array of culinary delights expertly crafted and elegantly served by our catering team, ensuring your event is a flavorful success.</h1>

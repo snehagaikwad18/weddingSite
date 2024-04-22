@@ -1,18 +1,25 @@
 import React from 'react'
 import Catering from './Catering'
 import Contact from './Contact'
+import Nav from './Nav';
 
 const CateringRoute = () => {
     return (
-        <div>
-            <div className="flex flex-col gap-10 ">
-                <div className="py-20">
-                    <Catering  />
-                </div>
-                <Contact />
+        <>
+ <Nav />
+            <div>
+              
+                <div className="flex flex-col gap-10 ">
 
+                    <div className="">
+
+                        <Catering />
+                    </div>
+                    <Contact />
+
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

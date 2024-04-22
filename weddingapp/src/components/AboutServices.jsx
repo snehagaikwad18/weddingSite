@@ -2,10 +2,15 @@ import React from 'react'
 import service1 from '../assets/service1.jpg'
 import service2 from '../assets/service2.jpg'
 import service3 from '../assets/service3.jpg'
+import Nav from './Nav';
 
 const AboutServices = () => {
   return (
-    <div className='px-2 h-full flex flex-col gap-5  xs:gap-10 py-10' >
+    <>
+    
+    
+    <div className='px-2 h-full flex flex-col gap-5  xs:gap-[55px] py-10 md:py-0 md:pb-12' >
+      
       <div className="justify-center items-center flex flex-col">
         <h1 className='text-[#576250] font-extrabold xs:text-[25px] sm:text-[35px] ' >Services</h1>
         <h1 className='text-[#B8C1B2] 2xl:text-[20px]'  >to plan and orchestrate your special occasion</h1>
@@ -55,6 +60,7 @@ const AboutServices = () => {
 
 
     </div>
+    </>
   )
 }
 
