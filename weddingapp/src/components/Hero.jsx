@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Button from './Button'
 import { HiMiniArrowLongDown } from "react-icons/hi2";
 import { Link } from 'react-scroll';
+import { Link as RouterLink  } from 'react-router-dom';
+
 import Nav from './Nav';
 import About from './About';
 import Testonimial from './Testonimial';
@@ -9,6 +11,7 @@ import Contact from './Contact';
 import Catering from './Catering';
 import Gallery from './Gallery';
 import Services from './Services';
+import { FaLongArrowAltRight } from 'react-icons/fa';
 
 
 const Hero = () => {
@@ -34,7 +37,7 @@ const Hero = () => {
             to="about"
             spy={true}
             smooth={true}
-            offset={30}
+            offset={575}
             duration={500}
 
           >
@@ -48,20 +51,25 @@ const Hero = () => {
               to="about"
               spy={true}
               smooth={true}
-              offset={30}
+              offset={5}
               duration={500}
 
             >
               <HiMiniArrowLongDown className='text-[#90998B] text-[25px]' />
-              </Link>
-              <h1 className='text-[#90998B] text-[14px]'>Scroll</h1>
+            </Link>
+            <h1 className='text-[#90998B] text-[14px]'>Scroll</h1>
           </div>
         </div>
       </div>
       <div className="flex flex-col gap-[30px]">
-        <div className="flex flex-col gap-[50px]">
+        <div className="flex flex-col gap-[30px] md:gap-[40px]">
           <About />
           <Gallery />
+          <div className="flex flex-row items-center justify-center">
+            <RouterLink to="/GalleryRoute" >
+              <Button className="w-[100px] py-2 text-[13px] xl:w-[186px] 2xl:w-[160px] md:w-[125px] lg:w-[156px] xl:h-[50px] 2xl:h-[50px] lg:h-[49px] md:h-[42px] bg-[#576250] md:text-[14px] lg:text-[15px] xl:text-[18px] 2xl:text-[18px] rounded-[5px] text-white scope-one-regular tracking-wide text-center flex flex-row gap-2 items-center justify-center">View More <span><FaLongArrowAltRight /></span></Button>
+            </RouterLink>
+          </div>
           <Services />
           <Catering />
         </div>
