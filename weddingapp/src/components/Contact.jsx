@@ -8,6 +8,7 @@ const Contact = () => {
     name: '',
     email: '',
     phone: '',
+    message : ''
   });
 
   const [errors, setErrors] = useState({});
@@ -39,17 +40,35 @@ const Contact = () => {
     return errors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const errors = validate(formData);
     if (Object.keys(errors).length === 0) {
       // Form submission logic here
-      console.log('Form submitted:', formData);
-      alert("Your information has sent successfully");
+      try {
+        const response = await fetch('http://localhost:8080/contacts', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
+        const res = await response.json();
+        if(response.ok) { 
+          alert("Message sent successfully!");
+        }else{
+          alert("Error occurred, message not sent");
+        }
+      } catch (error) {
+        alert("Error occurred, message not sent");
+      }
+      // console.log('Form submitted:', formData);
+      // alert("Your information has sent successfully");
       setFormData({
         name: '',
         email: '',
         phone: '',
+        message : ''
       });
 
     } else {
@@ -108,6 +127,18 @@ const Contact = () => {
                     className="px-[25px] py-[5px] xs:w-[300px] xs:py-[10px] sm:w-[350px] md:w-[338px] md:py-[8px] lg:w-[400px] xl:w-[500px] xl:py-4 boder-[#D9D9D9] border-[1px] rounded-[8px] placeholder:text-[#8D8D8D] poppins-regular text-[14px] "
                   />
                   {errors.phone && <span className="text-red-500 tracking-tight text-[12px] poppins-regular px-[8px]" >{errors.phone}</span>}
+                </div>
+
+                <div className="flex flex-col leading-[20px] ">
+                  <input
+                    type="text"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    placeholder="Message"
+                    className="px-[25px] py-[5px] xs:w-[300px] xs:py-[10px] sm:w-[350px] md:w-[338px] md:py-[8px] lg:w-[400px] xl:w-[500px] xl:py-4 boder-[#D9D9D9] border-[1px] rounded-[8px] placeholder:text-[#8D8D8D] poppins-regular text-[14px] "
+                  />
+                  {errors.message && <span className="text-red-500 tracking-tight text-[12px] poppins-regular px-[8px]" >{errors.message}</span>}
                 </div>
 
               </div>
