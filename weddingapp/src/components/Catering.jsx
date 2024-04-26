@@ -96,7 +96,7 @@ const Catering = () => {
                 return (
                   <div key={i} className=" border-[1px] border-[#E0E0E0] rounded-[5px] flex flex-col space-y-3" >
                     <div className="">
-                      <img src={foodImg} alt="" />
+                      <img src={foodImg} alt="" className='object-cover w-full h-full sm:h-full sm:w-full gallery-img' />
                     </div>
 
                     {/* text and price */}

@@ -259,8 +259,8 @@ const ImageGroup = styled.div`
   display: grid;
   place-items: center;
   
-  margin: 0; /* Remove margin */
-  padding: 0; /* Remove padding */
+  margin: 0; 
+  padding: 0;
   
   /* width: clamp(10rem, 1rem + 40vmin, 30rem); */
   /* padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10); */
@@ -305,7 +305,7 @@ const Image = styled.img`
   }
 
   @media (min-width: 1024px) {
-    width: 4cqmin;
+    width: 400px;
     height: 170px;
   }
 

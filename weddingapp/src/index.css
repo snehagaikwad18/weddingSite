@@ -133,3 +133,15 @@ code {
 .delay-3 {
   animation-delay: 10s; /* Adjust the delay as needed */
 }
+
+.gallery-img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
