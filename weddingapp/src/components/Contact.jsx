@@ -186,7 +186,7 @@ const Contact = () => {
 
 
         <div className="bg-opacity-80 md:order-first pt-7">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2706402.7532223384!2d7.874835480678192!3d44.491863075323316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c26f293e3163%3A0xff5d82c1f7db9ca8!2sVia%20Roma%2C%20123%2C%2020090%20Cesano%20Boscone%20MI%2C%20Italy!5e0!3m2!1sen!2sin!4v1713330328987!5m2!1sen!2sin"
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.3496363591553!2d73.96942107466971!3d19.267155745944706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd16501caa63a3%3A0x2dcafab0a245f7fc!2sSadguru%20Lawns!5e0!3m2!1sen!2sin!4v1713863011921!5m2!1sen!2sin"
             width="600" height="450" style={{ border: "0" }}
             // allowfullscreen=""
             loading="lazy"

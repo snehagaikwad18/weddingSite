@@ -17,6 +17,7 @@ import TestinomialRoute from './components/TestinomialRoute';
 import CateringRoute from './components/CateringRoute';
 import GalleryRoute from './components/GalleryRoute';
 import ContactRoute from './components/ContactRoute';
+import AdminPasswordProtection from './components/admincom';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path='/Testimonials' element={<TestinomialRoute />} />
             <Route path='/Catering' element={<CateringRoute />} />         
             <Route path='/Gallery' element={<GalleryRoute />} />         
+            <Route path='/secret' element={<AdminPasswordProtection />} />         
           </Routes>
           {/* <Gallery />
           

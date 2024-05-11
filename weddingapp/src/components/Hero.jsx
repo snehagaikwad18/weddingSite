@@ -12,6 +12,7 @@ import Catering from './Catering';
 import Gallery from './Gallery';
 import Services from './Services';
 import { FaLongArrowAltRight } from 'react-icons/fa';
+import Calendar from './calender';
 
 
 const Hero = () => {
@@ -63,6 +64,7 @@ const Hero = () => {
       </div>
       <div className="flex flex-col gap-[30px]">
         <div className="flex flex-col gap-[30px] md:gap-[40px]">
+          <Calendar/>
           <About />
           <Gallery />
           <div className="flex flex-row items-center justify-center">
